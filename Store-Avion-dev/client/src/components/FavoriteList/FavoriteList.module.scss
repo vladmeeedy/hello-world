@@ -1,0 +1,50 @@
+@import url(../../scss/fonts.scss);
+.favourite-list {
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #f9f9f9;
+  font-family: 'Clash Display Regular';
+}
+.favourite-heading {
+  font-size: 24px;
+  color: #2a254b;
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+.favourite-text {
+  font-family: 'Satoshi Regular';
+  font-size: 14px;
+  color: #2a254b;
+  padding-bottom: 40px;
+}
+@media only screen and (min-width: 768px) {
+  .favourite-list {
+    display: flex;
+  }
+  .favourite-list-wrapper {
+    margin: 5% auto;
+    background-color: white;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .favourite-heading {
+    margin-top: 40px;
+    padding-top: 0;
+  }
+  .favourite-text {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .favourite-list-wrapper {
+    max-width: 1440px;
+  }
+  .favourite-heading {
+    font-size: 36px;
+  }
+  .favourite-text {
+    font-size: 18px;
+  }
+}

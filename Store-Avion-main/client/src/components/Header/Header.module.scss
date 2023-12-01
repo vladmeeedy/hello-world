@@ -1,0 +1,141 @@
+@import url(../../scss/fonts.scss);
+
+.headerContainer {
+  width: 95%;
+  height: 69px;
+  margin: 0 auto;
+  position: relative;
+  padding-right: 15px;
+}
+
+.topMenu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logoLink {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-decoration: none;
+  display: block;
+  max-width: max-content;
+}
+
+.logo {
+  display: block;
+  font-family: 'Clash Display Regular';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #22202e;
+  width: max-content;
+}
+
+.icons {
+  display: block;
+
+  &Display {
+    display: none;
+  }
+}
+
+.icon {
+  display: inline-block;
+  margin-right: 16px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  &__profile {
+    display: inline-block;
+    color: #22202e;
+    height: auto;
+    transition: all 0.3s ease-in-out;
+  }
+  &__profile:hover {
+    transform: scale(1.3);
+  }
+}
+
+.icon:hover {
+  transform: scale(1.3);
+}
+
+.iconMenu {
+  width: max-content;
+  display: inline-block;
+  margin-left: 16px;
+  transition: all 0.3s ease-in-out;
+
+  &Display {
+    display: none;
+  }
+}
+.iconMenu:hover {
+  transform: scale(1.3);
+}
+
+.iconAuth {
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.iconAuth:hover {
+  transform: scale(1.3);
+}
+
+.shlash {
+  right: 51px;
+  color: #2a254b;
+  transition: all 0.3s ease-in-out;
+}
+
+.counter {
+  display: none;
+  position: absolute;
+  background: #f0ecec;
+  text-align: center;
+  color: #020107;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  font-family: 'Clash Display Regular';
+  font-weight: 400;
+  font-size: 12px;
+  top: -4px;
+  margin-left: 13px;
+}
+
+@media (min-width: 768px) {
+  .headerContainer {
+    height: 132px;
+    max-width: 1440px;
+  }
+
+  .topMenu {
+    height: 66px;
+    border-bottom: 1px solid #00000020;
+  }
+
+  .logo {
+    line-height: 66px;
+  }
+
+  .icons {
+    &Display {
+      display: inline-block;
+    }
+  }
+
+  .iconMenu {
+    display: none;
+  }
+
+  .counter {
+    display: block;
+  }
+}

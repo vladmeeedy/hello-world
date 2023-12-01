@@ -1,0 +1,74 @@
+@import url(../../scss/fonts.scss);
+.toastContainer {
+  position: fixed;
+  bottom: 20px;
+  z-index: 1000;
+}
+.toast {
+  background-color: #fff;
+  color: #2a254b;
+  font-family: 'Clash Display Regular';
+  font-size: 15px;
+  min-width: 325px;
+  height: 64px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  opacity: 0.9;
+  transition: opacity 0.5s ease-in-out;
+
+  &__message {
+    &__icon {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+    &__iconError {
+      color: red;
+      position: absolute;
+      text-align: center;
+      top: -3px;
+      left: -5px;
+    }
+
+    &__text {
+      padding-top: 24px;
+      text-align: center;
+    }
+  }
+
+  &__progress__bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    background-color: #21c179;
+    border-radius: 4px;
+    &__error {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 5px;
+      background-color: red;
+      border-radius: 4px;
+    }
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.btn__close {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out 0s;
+  transform: scale(1);
+}

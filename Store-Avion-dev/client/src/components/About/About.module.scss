@@ -1,0 +1,162 @@
+@import url(../../scss/fonts.scss);
+
+.container {
+  width: 100%;
+  color: #2a254b;
+  padding-bottom: 8px;
+
+  &__header {
+    width: 87.7%;
+    margin: 0 auto;
+    font-family: 'Clash Display Regular';
+    font-size: 32px;
+    line-height: 44.8px;
+    padding: 32.5px 0;
+  }
+}
+
+.section {
+  &__block {
+    display: flex;
+    flex-direction: column;
+    height: 414px;
+
+    &__info {
+      width: 87.7%;
+      margin: 0 auto;
+
+      &__title {
+        width: 80.1%;
+        font-family: 'Clash Display Regular';
+        font-size: 20px;
+        line-height: 28px;
+        padding: 48px 0 24px;
+      }
+
+      &__text {
+        font-family: 'Satoshi Regular';
+        font-size: 14px;
+        line-height: 21px;
+        color: #505977;
+
+        &:first-of-type {
+          padding-bottom: 21px;
+        }
+      }
+    }
+
+    &__img {
+      display: block;
+      width: 100%;
+      min-height: 358px;
+    }
+
+    &__btn {
+      width: 342px;
+      height: 56px;
+      margin: 52px auto 38px;
+      background-color: #f9f9f9;
+
+      margin-bottom: 38px;
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+        color: #2a254b;
+        font-family: 'Satoshi Regular';
+        font-size: 16px;
+        line-height: 24px;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 16px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+
+    &__header {
+      width: 70%;
+      font-size: 36px;
+      line-height: 50.4px;
+      padding: 50px 0;
+      text-align: center;
+    }
+  }
+
+  .section {
+    display: flex;
+    height: 480px;
+
+    &__block {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px 35px;
+
+      &__info {
+        width: 100%;
+
+        &__title {
+          width: 95.9%;
+          font-size: 24px;
+          line-height: 33.6px;
+          padding-top: 0;
+          padding-bottom: 25px;
+        }
+
+        &__text {
+          font-size: 16px;
+          line-height: 21.6px;
+
+          &:first-of-type {
+            padding-bottom: 24px;
+          }
+        }
+      }
+
+      &__img {
+        display: block;
+        min-width: 50%;
+        min-height: 480px;
+      }
+
+      &__btn {
+        width: 150px;
+        height: 56px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    padding-bottom: 0;
+    &__header {
+      width: 48.9%;
+      padding: 72.6px 0;
+    }
+  }
+
+  .section {
+    height: 547px;
+
+    &__block {
+      padding: 72px 92px;
+
+      &__info {
+        width: 100%;
+      }
+
+      &__btn {
+        margin: 0;
+      }
+    }
+  }
+}

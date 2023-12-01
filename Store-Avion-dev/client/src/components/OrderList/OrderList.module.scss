@@ -1,0 +1,59 @@
+@import url(../../scss/fonts.scss);
+.wrapper-orders {
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #f9f9f9;
+  font-family: 'Clash Display Regular';
+}
+.orders-title {
+  font-size: 24px;
+  color: #2a254b;
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+.order-text__empty {
+  font-family: 'Satoshi Regular';
+  font-size: 14px;
+  color: #2a254b;
+  padding-bottom: 40px;
+}
+@media only screen and (min-width: 768px) {
+  .wrapper-orders {
+    display: flex;
+  }
+  .container-orders {
+    margin: 5% auto;
+    background-color: white;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .orders-title {
+    margin-top: 40px;
+    padding-top: 0;
+  }
+  .order-text__empty {
+    font-size: 16px;
+  }
+}
+.order-container--item {
+  width: 100%;
+  position: relative;
+}
+
+@media only screen and (min-width: 1400px) {
+  .wrapper-orders {
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .container-orders {
+    max-width: 1440px;
+  }
+  .orders-title {
+    font-size: 36px;
+  }
+  .order-text__empty {
+    font-size: 18px;
+  }
+}

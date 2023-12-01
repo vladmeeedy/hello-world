@@ -1,0 +1,220 @@
+@import url(../../scss/fonts.scss);
+
+.header__logo {
+  width: 100%;
+}
+
+.products-container-container {
+  max-width: 4155px;
+  padding: 24px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px 22px;
+}
+
+.products-container-item {
+  text-decoration: none;
+  max-width: 163px;
+  transition:
+    transform 0.3s ease-in-out,
+    top 0.1s ease-in-out;
+  position: relative;
+  top: 0px;
+  border-radius: 0%;
+  transform: scale(1);
+}
+
+.products-container-item-img {
+  width: 163px;
+  height: 201px;
+  border: 1px solid rgb(223, 219, 219);
+  border-radius: 1%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out 0s;
+  transform: scale(1);
+}
+
+.products-container-item-name {
+  font-family: 'Clash Display  Regular';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #2a254b;
+}
+
+.products-container-item-price {
+  font-family: 'Satoshi Regular';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #2a254b;
+}
+
+.products-container-item-name,
+.products-container-item-price {
+  padding-left: 15px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.products-container-btn {
+  width: 100%;
+  height: 56px;
+  padding: 16px, 32px, 16px, 32px;
+  color: #2a254b;
+  margin-top: 40px;
+  font-family: 'Satoshi Regular';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.products-container-btn:hover {
+  box-shadow: 0px 10px 35px -10px rgba(42, 37, 75, 1);
+  transform: scale(1.1);
+}
+
+.products-container-btn:active,
+.products-container-item:active {
+  top: 5px;
+}
+
+.products-container-item:hover {
+  transform: scale(1.1);
+}
+
+.scroll-to-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  display: block;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 999;
+  width: 8%;
+  height: 56px;
+  padding: 16px, 32px, 16px, 32px;
+  color: #2a254b;
+  margin-top: 40px;
+  font-family: 'Satoshi Regular';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  border: none;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.scroll-to-top-button:hover {
+  box-shadow: 0px 10px 35px -10px rgba(42, 37, 75, 1);
+  transform: scale(1.1);
+}
+
+.show-scroll-button .scroll-to-top-button {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .products-container-container {
+    max-width: 768px;
+    padding: 20px 50px 30px 50px;
+  }
+
+  .products-container {
+    gap: none;
+  }
+
+  .products-container-item {
+    max-width: 305px;
+    padding: 40px 0px;
+  }
+
+  .products-container-item-img {
+    width: 305px;
+    height: 375px;
+  }
+
+  .products-container-btn {
+    width: 170px;
+    margin-top: 48px;
+  }
+
+  .scroll-to-top-button {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    display: block;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 999;
+    width: 18%;
+    height: 56px;
+    padding: 16px, 32px, 16px, 32px;
+    color: #2a254b;
+    margin-top: 40px;
+    font-family: 'Satoshi Regular';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    border: none;
+    transition: all 0.4s ease-in-out 0s;
+  }
+}
+
+@media (min-width: 768px) {
+  .products-container-container {
+    max-width: 768px;
+    padding: 20px 50px 30px 50px;
+  }
+
+  .products-container {
+    gap: none;
+  }
+
+  .products-container-item {
+    max-width: 305px;
+    padding: 40px 0px;
+  }
+
+  .products-container-item-img {
+    width: 305px;
+    height: 375px;
+  }
+
+  .products-container-btn {
+    width: 170px;
+    margin-top: 48px;
+  }
+}
+
+@media (min-width: 992px) {
+  .products-container-container {
+    max-width: 892px;
+    padding: 28px 20px 40px 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .products-container-container {
+    width: 1100px;
+    max-width: 1100px;
+    padding: 28px 20px 40px 20px;
+  }
+}

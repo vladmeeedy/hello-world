@@ -1,0 +1,187 @@
+@import url(../../scss/fonts.scss);
+
+.products-container-container {
+  max-width: 395px;
+  padding: 24px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.products-container-tittle {
+  font-family: 'Clash Display';
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 39px;
+  color: #2a254b;
+  padding-top: 56px;
+  padding-bottom: 33px;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px 14px;
+}
+
+.products-container-item {
+  text-decoration: none;
+  max-width: 163px;
+  transition:
+    transform 0.3s ease-in-out,
+    top 0.1s ease-in-out;
+  position: relative;
+  top: 0px;
+  border-radius: 0%;
+  transform: scale(1);
+}
+
+.products-container-item-img {
+  width: 163px;
+  height: 201px;
+  border: 1px solid rgb(223, 219, 219);
+  border-radius: 1%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out 0s;
+  transform: scale(1);
+}
+
+.products-container-item-name {
+  font-family: 'Clash Display';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #2a254b;
+}
+
+.products-container-item-price {
+  font-family: 'Satoshi';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #2a254b;
+}
+
+.products-container-item-name,
+.products-container-item-price {
+  padding-left: 15px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.products-container-btn {
+  width: 100%;
+  height: 56px;
+  padding: 16px, 32px, 16px, 32px;
+  color: #2a254b;
+  margin-top: 40px;
+  font-family: 'Satoshi';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  border: none;
+  cursor: pointer;
+  transition:
+    transform 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out,
+    top 0.1s ease-in-out;
+  transform: scale(1);
+  position: relative;
+  top: 0;
+}
+
+.products-container-btn:hover {
+  box-shadow: 0px 10px 35px -10px rgba(42, 37, 75, 1);
+  //border-radius: 40px;
+  transform: scale(1.1);
+}
+
+.products-container-btn:active,
+.products-container-item:active {
+  top: 5px;
+}
+
+.products-container-item:hover {
+  //position: relative;
+  //top: -15px;
+  //box-shadow: 0px 0px 20px 0px rgba(42, 37, 75, 1);
+  //border-radius: 10%;
+  transform: scale(1.1);
+}
+
+//.products-container-item:hover .products-container-item-img {
+//border-radius: 10%;
+//transform: scale(1.1);
+//}
+
+//.products-container-item:hover .products-container-item-name,
+//.products-container-item:hover .products-container-item-price {
+//    padding-left: 50px;
+//}
+
+@media (min-width: 768px) {
+  .products-container-container {
+    max-width: 768px;
+    padding: 20px 24px 30px 24px;
+  }
+
+  .products-container {
+    gap: 54px 0px;
+    justify-content: space-between;
+  }
+
+  .products-container-item {
+    max-width: 305px;
+  }
+
+  .products-container-item-img {
+    width: 305px;
+    height: 375px;
+  }
+
+  .products-container-btn {
+    width: 170px;
+    margin-top: 48px;
+  }
+}
+
+@media (min-width: 992px) {
+  .products-container-container {
+    max-width: 100%;
+    padding: 28px 80px 40px 80px;
+  }
+
+  .products-container-item {
+    width: 25%;
+  }
+
+  .products-container {
+    gap: 0px 20px;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .products-container-item-img {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .products-container-container {
+    max-width: 1440px;
+    padding: 28px 70px 40px 70px;
+  }
+
+  .products-container-item-img {
+    width: 305px;
+    height: 375px;
+  }
+}

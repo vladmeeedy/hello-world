@@ -1,0 +1,62 @@
+@import url(../../scss/fonts.scss);
+
+.favourite-item {
+  margin-bottom: 33px;
+  display: flex;
+  text-decoration: none;
+  color: #2a254b;
+}
+.favourite-item-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.favourite-img {
+  width: 133px;
+  height: 166px;
+}
+.favourite-item-description {
+  margin-left: 24px;
+}
+.favourite-item-heading {
+  font-size: 16px;
+  color: #2a254b;
+  line-height: 23px;
+}
+.favourite-item-text {
+  font-family: 'Satoshi Regular';
+  padding-top: 10px;
+  font-size: 14px;
+  line-height: 21px;
+  max-height: 92px;
+  overflow: hidden;
+}
+.favourite-item-price {
+  font-family: 'Satoshi Regular';
+  padding-top: 10px;
+  font-size: 16px;
+}
+.favourite-close-icon {
+  cursor: pointer;
+  box-sizing: content-box;
+  flex-shrink: 0;
+}
+@media only screen and (min-width: 768px) {
+  .favourite-item-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .favourite-item-text {
+    max-height: 88px;
+    padding-top: 0;
+  }
+  .favourite-item-price {
+    padding-top: 0;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .favourite-item-heading {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}

@@ -1,0 +1,49 @@
+.btn-send--order {
+  margin-top: 40px;
+  width: 100%;
+  padding: 16px 0;
+  font-family: 'Satoshi';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  background-color: #2a254b;
+  color: white;
+  transition: all 0.1s ease-in-out;
+  transform: scale(1);
+  cursor: pointer;
+}
+.form__user-address {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.order__text-container {
+  margin: 40px auto 0 auto;
+  width: max-content;
+}
+
+.order-text {
+  font-family: 'Clash Display';
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  margin-bottom: 32px;
+  color: #2a254b;
+}
+
+.form-massage__error {
+  color: #e4605e;
+}
+
+@media (min-width: 768px) {
+  .btn-container {
+    width: max-content;
+    margin-left: auto;
+  }
+  .order__text-container {
+    max-width: 600px;
+    width: max-content;
+  }
+  .btn-send--order {
+    width: 172px;
+  }
+}

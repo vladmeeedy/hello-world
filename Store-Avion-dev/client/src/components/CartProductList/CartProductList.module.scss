@@ -1,0 +1,126 @@
+.cart-product-container {
+  max-width: 100%;
+  padding-bottom: 36px;
+  position: relative;
+}
+
+.delete-icon {
+  position: absolute;
+  top: 8px;
+  right: 0px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  transform: scale(1);
+}
+
+.delete-icon:hover {
+  transform: scale(1.2);
+}
+
+.product-photo {
+  width: 133px;
+  height: 166px;
+  margin-right: 22px;
+}
+
+.photo-and-text-section {
+  display: flex;
+}
+
+.cart-product-info-box {
+}
+
+.cart-product-name {
+  font-family: 'Clash Display';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  color: #2a254b;
+}
+
+.cart-product-discribe,
+.cart-product-price {
+  font-family: 'Satoshi';
+  font-weight: 400;
+  line-height: 21px;
+  color: #2a254b;
+}
+
+.cart-product-discribe {
+  font-size: 14px;
+  padding: 8px 0px;
+}
+
+.cart-product-price {
+  font-size: 16px;
+}
+
+.cart-product-quantity {
+  display: flex;
+  width: 122px;
+  max-height: 46px;
+  background-color: #f9f9f9;
+  padding: 12px 16px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  bottom: 40px;
+  left: 150px;
+}
+
+.cart-product-quantity p {
+  color: #2a254b;
+  font-family: 'Satoshi';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.cart-product-quantity button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Satoshi';
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #807f83;
+  transition: all 0.1s ease-in-out;
+  transform: scale(1);
+}
+
+.cart-product-quantity button:hover {
+  transform: scale(1.4);
+  color: #2a254b;
+}
+
+.total-price-one-product {
+  display: none;
+  margin-right: 40px;
+  padding-top: 8px;
+  color: #2a254b;
+  font-family: 'Satoshi';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+@media (min-width: 768px) {
+  .cart-product-name {
+    font-size: 20px;
+  }
+
+  .cart-product-quantity {
+    position: static;
+  }
+
+  .cart-product-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .total-price-one-product {
+    display: block;
+  }
+}

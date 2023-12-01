@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OrdersPage renders without errors 1`] = `
+<DocumentFragment>
+  <div
+    class="wrapper-orders"
+  >
+    <div
+      class="container-orders"
+    >
+      <h2
+        class="orders-title"
+      >
+        Your orders
+      </h2>
+      <div
+        class="order-container--item"
+      />
+      <div
+        class="order-container--item"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
