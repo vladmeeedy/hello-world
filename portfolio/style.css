@@ -57,7 +57,7 @@ a:hover{
 
 .logo{
     font-size: 2rem;
-    padding: 30px;
+    text-align: center;
 }
 .logo:hover{
     cursor: default;
