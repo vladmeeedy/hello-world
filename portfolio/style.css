@@ -110,8 +110,13 @@ a:hover{
     transition: all 0.3 ease-in-out;
 }
 
-.menu-links li {
-    list-style: none;
+.menu-links li{
+    list-style: none;    
+}
+
+.menu-links a{  
+   /* font-size: 20px; */
+   white-space: nowrap;    
 }
 
 .menu-links.open{
@@ -167,7 +172,8 @@ section {
     display: flex;
     height: 400px;
     width: 400px;
-    margin: auto 0; 
+    margin: auto 0;
+    justify-content: center; 
 }
 
 .section__text {
