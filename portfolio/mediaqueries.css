@@ -75,6 +75,9 @@
         
          height: 1.6rem;
      }
+     .logo {
+        margin-left: 1.5rem;
+     }
      footer nav {
          height: fit-content;
          margin-bottom: 2rem;
