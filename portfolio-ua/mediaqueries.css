@@ -6,7 +6,11 @@
    .about-containers {
      flex-wrap: wrap;
    }
+   .details-container {
+    padding: 1rem;
+  }
 }
+
 
 @media screen and (max-width: 1200px) {
     #desktop-nav{
@@ -22,6 +26,9 @@
     #experience, 
     .experience-details-container {
         margin-top: 2rem;
+    }
+    #profile{
+        height: fit-content;
     }
     #profile, 
     .section-container {
@@ -45,10 +52,10 @@
     }
 
     .about-containers {
-        margin-top: 0;
+        margin-top: 1rem;
     }
     .project-img {        
-        max-width: 600px;
+        max-width: 100%;
     }
    
     footer p {
@@ -60,6 +67,7 @@
 }
 
 @media screen and (max-width: 600px) {
+   
     #contact, footer {
         height: 40vh;
         margin-bottom: 0;
@@ -130,7 +138,7 @@
         text-align: justify;
     }
     .project-img {        
-        max-width: 200px;
+        max-width: 100%;
     }
    
 }

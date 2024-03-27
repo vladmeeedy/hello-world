@@ -149,7 +149,7 @@ a:hover{
 /*SECTION*/
 
 section {
-    padding-top: 4vh;
+    padding: 4vh 5%;
     height: 96vh;
     margin: 0 10rem;
     box-sizing: border-box;
@@ -309,6 +309,12 @@ section {
     margin:auto 0;
 }
 
+.text-container{
+    p{
+        text-align: justify;
+    }
+}
+
 /* EXPERIENCE SECTION*/
 
 #experience{
@@ -362,7 +368,7 @@ article {
 
 .project-img {
     border-radius: 2rem;
-    max-width: 600px;
+    max-width: 100%;
    
 }
 
