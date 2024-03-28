@@ -1,21 +1,54 @@
 import React from 'react'
 import { Navigate, useRoutes, BrowserRouter } from 'react-router-dom'
 
-import Layout from '../layouts/Layout'
 import HomePage from '../pages/HomePage/HomePage'
-import CartPage from '../pages/CartPage/index'
-import FavoritesPage from '../pages/FavoritesPage/FavoritesPage'
-import CategoryPage from '../pages/CategoryPage/CategoryPage'
-import ProductPage from '../pages/ProductPage/ProductPage'
-import AllProductsPage from '../pages/AllProductsPage/AllProductsPage.js'
-import AuthPage from '../pages/AuthPage/AuthPage'
-import OrderPage from '../pages/OrderPage/OrderPage'
-import AboutPage from '../pages/AboutPage/AboutPage'
-import PageNotFound from '../pages/PageNotFound/PageNotFound'
-import PrivacyPage from '../pages/PrivacyPage/PrivacyPage'
-import ScrollToTop from './ScrollToTop'
-import ProfilePage from '../pages/ProfilePage/ProfilePage'
-import ContactUs from '../pages/ContacUs/index.js'
+import Layout from '../layouts/Layout'
+
+
+
+const CartPage = React.lazy(
+  () => import(/* webpackChunkName: "CartPage" */ '../pages/CartPage/index'),
+)
+const FavoritesPage = React.lazy(
+  () => import(/* webpackChunkName: "FavoritesPage" */ '../pages/FavoritesPage/FavoritesPage'),
+)
+const CategoryPage = React.lazy(
+  () => import(/* webpackChunkName: "CategoryPage" */ '../pages/CategoryPage/CategoryPage'),
+)
+const ProductPage = React.lazy(
+  () => import(/* webpackChunkName: "ProductPage" */ '../pages/ProductPage/ProductPage'),
+)
+
+const AllProductsPage = React.lazy(
+  () => import(/* webpackChunkName: "AllProductsPage" */ '../pages/AllProductsPage/AllProductsPage.js'),
+)
+
+const AuthPage = React.lazy(
+  () => import(/* webpackChunkName: "AuthPage" */ '../pages/AuthPage/AuthPage'),
+)
+
+const OrderPage = React.lazy(
+  () => import(/* webpackChunkName: "OrderPage" */ '../pages/OrderPage/OrderPage'),
+)
+const AboutPage = React.lazy(
+  () => import(/* webpackChunkName: "AboutPage" */ '../pages/AboutPage/AboutPage'),
+)
+const PageNotFound = React.lazy(
+  () => import(/* webpackChunkName: "PageNotFound" */ '../pages/PageNotFound/PageNotFound'),
+)
+const PrivacyPage = React.lazy(
+  () => import(/* webpackChunkName: "PrivacyPage" */ '../pages/PrivacyPage/PrivacyPage'),
+)
+const ScrollToTop = React.lazy(
+  () => import(/* webpackChunkName: "ScrollToTop" */ './ScrollToTop'),
+)
+const ProfilePage = React.lazy(
+  () => import(/* webpackChunkName: "ProfilePage" */ '../pages/ProfilePage/ProfilePage'),
+)
+const ContactUs = React.lazy(
+  () => import(/* webpackChunkName: "ContactUs" */ '../pages/ContacUs/index.js'),
+)
+
 
 function Routes() {
   return useRoutes([
@@ -44,9 +77,11 @@ function Routes() {
 
 export default function Router() {
   return (
-    <BrowserRouter>
-      <ScrollToTop />
-      <Routes />
+    <BrowserRouter>      
+      <React.Suspense fallback={<div>Loading...</div>}>
+        <ScrollToTop />
+        <Routes />
+      </React.Suspense >      
     </BrowserRouter>
   )
 }
