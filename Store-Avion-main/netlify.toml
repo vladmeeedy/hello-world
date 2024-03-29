@@ -4,3 +4,9 @@
 
 [build.environment]
   NODE_ENV = "production"
+
+  [[headers]]
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+
