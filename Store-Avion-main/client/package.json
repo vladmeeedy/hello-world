@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://6606b4240a8a02ea10cbf1b2--store-avion.netlify.app/",
+  "proxy": "https://6606b4240a8a02ea10cbf1b2--store-avion.netlify.app/home/",
   "dependencies": {
     "@react-google-maps/api": "^2.19.2",
     "@reduxjs/toolkit": "^1.9.7",
