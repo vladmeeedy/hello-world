@@ -4,7 +4,12 @@ import { Navigate, useRoutes, BrowserRouter } from 'react-router-dom'
 import HomePage from '../pages/HomePage/HomePage'
 import Layout from '../layouts/Layout'
 
-
+const HomePage = React.lazy(
+  () => import(/* webpackChunkName: "HomePage" */ '../pages/HomePage/HomePage'),
+)
+const Layout = React.lazy(
+  () => import(/* webpackChunkName: "Layout" */ 'Layout'),
+)
 
 const CartPage = React.lazy(
   () => import(/* webpackChunkName: "CartPage" */ '../pages/CartPage/index'),
