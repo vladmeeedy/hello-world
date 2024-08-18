@@ -18,6 +18,10 @@ p {
   color: rgb(85, 85, 85);
 }
 
+ul {
+  list-style: none;
+}
+
 /*TRANSITION*/
 
 a,
@@ -28,8 +32,13 @@ a,
 /*DESCTOP NAV*/
 
 nav,
-.nav-links {
+.nav-links,
+.lang {
   display: flex;
+}
+
+.lang li {
+  margin: 0 4px;
 }
 
 nav {

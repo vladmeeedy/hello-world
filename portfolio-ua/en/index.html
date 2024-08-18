@@ -4,51 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../mediaqueries.css" />
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">Володимир Медведчук</div>
+      <div class="logo">Volodymyr Medvedchuk</div>
       <ul class="lang">
         <li class="lang_en">
-          <a
-            href="en/index.html"
-            lang="en"
-            xml:lang="en"
-            dir="ltr"
-            title="(�нглий�кий)"
-            ><img alt="English" src="assets/en.jpg"
-          /></a>
+          <img alt="�нглий�кий" src="../assets/en.jpg" />
         </li>
         <li class="lang_ua">
-          <img alt="Ук�а�н��кий" src="assets/ua.jpg" />
+          <a
+            href="../index.html"
+            lang="ua"
+            xml:lang="ua"
+            dir="ltr"
+            title="(Ук�а�н��кий)"
+            ><img alt="Ukrainian" src="../assets/ua.jpg"
+          /></a>
         </li>
       </ul>
       <div>
         <ul class="nav-links">
-          <li><a href="#about">Про себе</a></li>
-          <li><a href="#experience">Досвід</a></li>
-          <li><a href="#projects">Проекти</a></li>
-          <li><a href="#contact">Контакти</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">Володимир Медведчук</div>
+      <div class="logo">Volodymyr Medvedchuk</div>
       <ul class="lang">
-        <li class="lang_ua">
-          <img alt="Ук�а�н��кий" src="assets/ua.jpg" />
-        </li>
         <li class="lang_en">
+          <img alt="�нглий�кий" src="../assets/en.jpg" />
+        </li>
+        <li class="lang_ua">
           <a
-            href="en/index.html"
-            lang="en"
-            xml:lang="en"
+            href="../index.html"
+            lang="ua"
+            xml:lang="ua"
             dir="ltr"
-            title="(�нглий�кий)"
-            ><img alt="English" src="assets/en.jpg"
+            title="(Ук�а�н��кий)"
+            ><img alt="Ukrainian" src="../assets/ua.jpg"
           /></a>
         </li>
       </ul>
@@ -59,44 +59,44 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">Про себе</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Досвід</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Проекти</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Контакти</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
     <section id="profile">
       <div class="section__pic-container">
         <img
-          src="./assets/photo.webp"
+          src="../assets/photo.webp"
           alt="Volodymyr Medvedchuk profie picture"
         />
       </div>
       <div class="section__text">
-        <p class="section__text__p1">Привіт, я</p>
-        <h1 class="title">Володимир Медведчук</h1>
-        <p class="section__text__p2">Frontend розробник</p>
+        <p class="section__text__p1">Hello, I`m</p>
+        <h1 class="title">Volodymyr Medvedchuk</h1>
+        <p class="section__text__p2">Frontend Developer</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/ВолодимирМедведчук-CV-FrontEndDeveloper.pdf')"
+            onclick="window.open('../assets/VolodymyrMedvedchuk-CV-FrontEndDeveloper.pdf')"
           >
-            Резюме
+            Download CV
           </button>
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Контакти
+            Contact info
           </button>
         </div>
         <div id="socials-container">
           <img
-            src="./assets/linkedin.png"
+            src="../assets/linkedin.png"
             alt="My linkedin profile"
             class="icon"
             onclick="window.open('https://www.linkedin.com/in/volodymyr-medvedchuk/')"
           />
           <img
-            src="./assets/github.png"
+            src="../assets/github.png"
             alt="My linkedin profile"
             class="icon"
             onclick="window.open('https://github.com/vladmeeedy')"
@@ -105,12 +105,12 @@
       </div>
     </section>
     <section id="about">
-      <p class="section__text__p1">Додатково</p>
-      <h1 class="title">Про себе</h1>
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
       <div class="section-container">
         <div class="section__pic-container">
           <img
-            src="./assets/foto2.jpg"
+            src="../assets/foto2.jpg"
             alt="Profie picture"
             class="about-pic"
           />
@@ -119,59 +119,60 @@
           <div class="about-containers">
             <div class="details-container">
               <img
-                src="./assets/experience1.png"
+                src="../assets/experience1.png"
                 alt="Experiance icon"
                 class="icon"
               />
-              <h3>Досвід</h3>
-              <p>1+рік <br />Frontend розробник</p>
+              <h3>Experience</h3>
+              <p>1+year <br />Frontend Developer</p>
             </div>
             <div class="details-container">
               <img
-                src="./assets/education.png"
+                src="../assets/education.png"
                 alt="Education icon"
                 class="icon"
               />
-              <h3>Освіта</h3>
+              <h3>Education</h3>
               <p>
-                DAN.IT education<br />Frontend розробник<br /><a
+                DAN.IT education<br />Frontend Developer<br /><a
                   target="_blank"
-                  href="./assets/certificate.html"
-                  >Сертифікат</a
+                  href="../assets/certificate.html"
+                  >Certificate</a
                 >
               </p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              Шукаю пропозицію роботи на посаді Junior front-end developer в
-              компанії, яка дасть мені можливість реалізувати отримані навички
-              розробки та почати кар'єру в ІТ-індустрії. Можу бути корисним у
-              розробці функціональних додатків, написанні функціональних
-              компонентів, інших питаннях розробки. Зацікавлений у навчанні та
-              розширенні набутих навичок програмування.
+              I am looking for a job offer for the position of a Junior
+              front-end developer in a company that will give me the opportunity
+              to implement the acquired development skills and start a career in
+              the IT industry. I can be useful in the development of functional
+              applications, writing functional components, other issues in
+              development. Interested in learning and expanding the acquired
+              programming skills.
             </p>
           </div>
         </div>
       </div>
       <img
-        src="./assets/arrow.png"
+        src="../assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#experience'"
       />
     </section>
     <section id="experience">
-      <p class="section__text__p1">Для ознайомлення</p>
-      <h1 class="title">Досвід</h1>
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend розробка</h2>
+            <h2 class="experience-sub-title">Frontend Development</h2>
             <div class="article-container">
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="../assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -181,7 +182,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="../assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -191,7 +192,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="../assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -201,7 +202,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="../assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -211,7 +212,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="../assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -221,7 +222,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="../assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -231,7 +232,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="../assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -241,7 +242,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="../assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -251,7 +252,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="../assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -261,7 +262,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="../assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -272,11 +273,11 @@
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">Backend розробка</h2>
+            <h2 class="experience-sub-title">Backend Development</h2>
             <div class="article-container">
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="../assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -286,7 +287,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="../assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -296,7 +297,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="../assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -306,7 +307,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="../assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -319,28 +320,26 @@
         </div>
       </div>
       <img
-        src="./assets/arrow.png"
+        src="../assets/arrow.png"
         alt="Arow icon"
         class="icon arrow"
         onclick="location.href='./#projects'"
       />
     </section>
     <section id="projects">
-      <p class="section__text__p1">Перегляньте мої останні</p>
-      <h1 class="title">Проекти</h1>
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-3.jpg"
+                src="../assets/project-3.jpg"
                 alt="Project 3"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">
-              Проeкт "Інтернет-магазин"
-            </h2>
+            <h2 class="experience-sub-title project-title">"Online store"</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -352,21 +351,19 @@
                 class="btn btn-color-2 project-btn"
                 onclick="window.open('https://www.sharik-upp.com/')"
               >
-                демо
+                Live Demo
               </button>
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-2.jpg"
+                src="../assets/project-2.jpg"
                 alt="Project 1"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">
-              Проeкт "Інтернет-магазин"
-            </h2>
+            <h2 class="experience-sub-title project-title">"Online store"</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -378,21 +375,19 @@
                 class="btn btn-color-2 project-btn"
                 onclick="window.open('https://main--react-pizza-v2new.netlify.app/')"
               >
-                демо
+                Live demo
               </button>
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-1.jpg"
+                src="../assets/project-1.jpg"
                 alt="Project 1"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">
-              Проeкт "Інтернет-магазин"
-            </h2>
+            <h2 class="experience-sub-title project-title">"Online store"</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -404,26 +399,26 @@
                 class="btn btn-color-2 project-btn"
                 onclick="window.open('https://shop-avion.onrender.com/home/')"
               >
-                демо
+                Live demo
               </button>
             </div>
           </div>
         </div>
       </div>
       <img
-        src="./assets/arrow.png"
+        src="../assets/arrow.png"
         alt="Arow icon"
         class="icon arrow"
         onclick="location.href='./#contact'"
       />
     </section>
     <section id="contact">
-      <p class="section__text__p1">На зв'язку</p>
-      <h1 class="title">Контакти</h1>
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img
-            src="./assets/phone.png"
+            src="../assets/phone.png"
             alt="Phone icon"
             class="icon contact-icon"
           />
@@ -433,7 +428,7 @@
         </div>
         <div class="contact-info-container">
           <img
-            src="./assets/tg.png"
+            src="../assets/tg.png"
             alt="Telegram icon"
             class="icon contact-icon"
           />
@@ -443,7 +438,7 @@
         </div>
         <div class="contact-info-container">
           <img
-            src="./assets/email.png"
+            src="../assets/email.png"
             alt="Email icon"
             class="icon contact-icon"
           />
@@ -455,7 +450,7 @@
         </div>
         <div class="contact-info-container">
           <img
-            src="./assets/linkedin.png"
+            src="../assets/linkedin.png"
             alt="linkedIn icon"
             class="icon contact-icon"
           />
@@ -474,15 +469,15 @@
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
-            <li><a href="#about">Про себе</a></li>
-            <li><a href="#experience">Досвід</a></li>
-            <li><a href="#projects">Проекти</a></li>
-            <li><a href="#contact">Контакти</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
-      <p>Авторське право &#169; Володимир Медведчук. Всі права захищені</p>
+      <p>Copyright &#169; Volodymyr Medvedchuk. All Rights Reserved</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
   </body>
 </html>
