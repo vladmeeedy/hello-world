@@ -112,6 +112,10 @@
   .logo {
     font-size: 1.5rem;
   }
+
+  .lang {
+    display: inline;
+  }
   .nav-links {
     flex-direction: column;
     gap: 0.5rem;

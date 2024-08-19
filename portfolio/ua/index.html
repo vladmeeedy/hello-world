@@ -4,26 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../mediaqueries.css" />
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="My Portfolio - Володимир Медведчук" />
+    <meta
+      property="og:description"
+      content="Frontend розробник - Досвід, Проекти, Контакти."
+    />
+    <meta
+      property="og:image"
+      content="https://volodymyr-medvedchuk-en.netlify.app/assets/photo.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://volodymyr-medvedchuk-en.netlify.app/ua"
+    />
+    <meta property="og:site_name" content="My Portfolio" />
   </head>
   <body>
     <nav id="desktop-nav">
       <div class="logo">Володимир Медведчук</div>
       <ul class="lang">
         <li class="lang_en">
-          <a
-            href="en/index.html"
-            lang="en"
-            xml:lang="en"
-            dir="ltr"
-            title="(English)"
-            ><img alt="English" src="assets/en.jpg"
-          /></a>
+          <img alt="Ukrainian" src="../assets/ua.jpg" />
         </li>
         <li class="lang_ua">
-          <img alt="Ук�а�н��кий" src="assets/ua.jpg" />
+          <a
+            href="../index.html"
+            lang="ua"
+            xml:lang="ua"
+            dir="ltr"
+            title="(Ukrainian)"
+            ><img alt="English" src="../assets/en.jpg"
+          /></a>
         </li>
       </ul>
       <div>
@@ -38,17 +54,17 @@
     <nav id="hamburger-nav">
       <div class="logo">Володимир Медведчук</div>
       <ul class="lang">
-        <li class="lang_ua">
-          <img alt="Ук�а�н��кий" src="assets/ua.jpg" />
-        </li>
         <li class="lang_en">
+          <img alt="Ukrainian" src="../assets/ua.jpg" />
+        </li>
+        <li class="lang_ua">
           <a
-            href="en/index.html"
-            lang="en"
-            xml:lang="en"
+            href="../index.html"
+            lang="ua"
+            xml:lang="ua"
             dir="ltr"
-            title="(�нглий�кий)"
-            ><img alt="English" src="assets/en.jpg"
+            title="(Ukrainian)"
+            ><img alt="English" src="../assets/en.jpg"
           /></a>
         </li>
       </ul>
@@ -69,7 +85,7 @@
     <section id="profile">
       <div class="section__pic-container">
         <img
-          src="./assets/photo.webp"
+          src="../assets/photo.jpg"
           alt="Volodymyr Medvedchuk profie picture"
         />
       </div>
@@ -80,7 +96,7 @@
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/ВолодимирМедведчук-CV-FrontEndDeveloper.pdf')"
+            onclick="window.open('../assets/ВолодимирМедведчук-CV-FrontEndDeveloper.pdf')"
           >
             Резюме
           </button>
@@ -90,13 +106,13 @@
         </div>
         <div id="socials-container">
           <img
-            src="./assets/linkedin.png"
+            src="../assets/linkedin.png"
             alt="My linkedin profile"
             class="icon"
             onclick="window.open('https://www.linkedin.com/in/volodymyr-medvedchuk/')"
           />
           <img
-            src="./assets/github.png"
+            src="../assets/github.png"
             alt="My linkedin profile"
             class="icon"
             onclick="window.open('https://github.com/vladmeeedy')"
@@ -110,7 +126,7 @@
       <div class="section-container">
         <div class="section__pic-container">
           <img
-            src="./assets/foto2.jpg"
+            src="../assets/foto2.jpg"
             alt="Profie picture"
             class="about-pic"
           />
@@ -119,7 +135,7 @@
           <div class="about-containers">
             <div class="details-container">
               <img
-                src="./assets/experience1.png"
+                src="../assets/experience1.png"
                 alt="Experiance icon"
                 class="icon"
               />
@@ -128,7 +144,7 @@
             </div>
             <div class="details-container">
               <img
-                src="./assets/education.png"
+                src="../assets/education.png"
                 alt="Education icon"
                 class="icon"
               />
@@ -136,7 +152,7 @@
               <p>
                 DAN.IT education<br />Frontend розробник<br /><a
                   target="_blank"
-                  href="./assets/certificate.html"
+                  href="../assets/certificate.html"
                   >Сертифікат</a
                 >
               </p>
@@ -155,7 +171,7 @@
         </div>
       </div>
       <img
-        src="./assets/arrow.png"
+        src="../assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#experience'"
@@ -171,7 +187,7 @@
             <div class="article-container">
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="../assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -181,7 +197,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="../assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -191,7 +207,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="../assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -201,7 +217,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="../assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -211,7 +227,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="../assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -221,7 +237,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="../assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -231,7 +247,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="../assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -241,7 +257,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="../assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -251,7 +267,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="../assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -261,7 +277,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="../assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -276,7 +292,7 @@
             <div class="article-container">
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="../assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -286,7 +302,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="../assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -296,7 +312,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="../assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -306,7 +322,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="../assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -319,7 +335,7 @@
         </div>
       </div>
       <img
-        src="./assets/arrow.png"
+        src="../assets/arrow.png"
         alt="Arow icon"
         class="icon arrow"
         onclick="location.href='./#projects'"
@@ -333,7 +349,7 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-3.jpg"
+                src="../assets/project-3.jpg"
                 alt="Project 3"
                 class="project-img"
               />
@@ -359,7 +375,7 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-2.jpg"
+                src="../assets/project-2.jpg"
                 alt="Project 1"
                 class="project-img"
               />
@@ -385,7 +401,7 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-1.jpg"
+                src="../assets/project-1.jpg"
                 alt="Project 1"
                 class="project-img"
               />
@@ -411,7 +427,7 @@
         </div>
       </div>
       <img
-        src="./assets/arrow.png"
+        src="../assets/arrow.png"
         alt="Arow icon"
         class="icon arrow"
         onclick="location.href='./#contact'"
@@ -423,7 +439,7 @@
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img
-            src="./assets/phone.png"
+            src="../assets/phone.png"
             alt="Phone icon"
             class="icon contact-icon"
           />
@@ -433,7 +449,7 @@
         </div>
         <div class="contact-info-container">
           <img
-            src="./assets/tg.png"
+            src="../assets/tg.png"
             alt="Telegram icon"
             class="icon contact-icon"
           />
@@ -443,7 +459,7 @@
         </div>
         <div class="contact-info-container">
           <img
-            src="./assets/email.png"
+            src="../assets/email.png"
             alt="Email icon"
             class="icon contact-icon"
           />
@@ -455,7 +471,7 @@
         </div>
         <div class="contact-info-container">
           <img
-            src="./assets/linkedin.png"
+            src="../assets/linkedin.png"
             alt="linkedIn icon"
             class="icon contact-icon"
           />
@@ -483,6 +499,6 @@
       </nav>
       <p>Авторське право &#169; Володимир Медведчук. Всі права захищені</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
   </body>
 </html>

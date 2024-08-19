@@ -7,10 +7,40 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
     <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="My Portfolio - Volodymyr Medvedchuk" />
+    <meta
+      property="og:description"
+      content="Frontend Developer - Experience, Projects, Contacts."
+    />
+    <meta
+      property="og:image"
+      content="https://volodymyr-medvedchuk-en.netlify.app/assets/photo.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://volodymyr-medvedchuk-en.netlify.app"
+    />
+    <meta property="og:site_name" content="My Portfolio" />
   </head>
   <body>
     <nav id="desktop-nav">
       <div class="logo">Volodymyr Medvedchuk</div>
+      <ul class="lang">
+        <li class="lang_en">
+          <img alt="English" src="assets/en.jpg" />
+        </li>
+        <li class="lang_ua">
+          <a
+            href="ua/index.html"
+            lang="ua"
+            xml:lang="ua"
+            dir="ltr"
+            title="(Ukrainian)"
+            ><img alt="Ukrainian" src="assets/ua.jpg"
+          /></a>
+        </li>
+      </ul>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -22,6 +52,21 @@
     </nav>
     <nav id="hamburger-nav">
       <div class="logo">Volodymyr Medvedchuk</div>
+      <ul class="lang">
+        <li class="lang_en">
+          <img alt="English" src="assets/en.jpg" />
+        </li>
+        <li class="lang_ua">
+          <a
+            href="ua/index.html"
+            lang="ua"
+            xml:lang="ua"
+            dir="ltr"
+            title="(Ukrainian)"
+            ><img alt="Ukrainian" src="assets/ua.jpg"
+          /></a>
+        </li>
+      </ul>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -39,7 +84,7 @@
     <section id="profile">
       <div class="section__pic-container">
         <img
-          src="./assets/photo.webp"
+          src="./assets/photo.jpg"
           alt="Volodymyr Medvedchuk profie picture"
         />
       </div>
